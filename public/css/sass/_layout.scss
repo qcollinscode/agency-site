@@ -1,0 +1,89 @@
+header {
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    .landing {
+        min-height: 100vh;
+        max-height: 1000px;
+        width: 100%;
+        background: url('./../img/dev/redbuilding.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &:after {
+            content: '';
+            min-height: 100vh;
+            max-height: 1000px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    .about {
+        min-height: 737px;
+        background: rgb(12, 12, 12);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article01 {
+        min-height: 450px;
+        background: rgb(170, 20, 21);
+        .container-fluid {
+            min-height: 450px;
+            .row {
+                min-height: 450px;
+            }
+        }
+    }
+    .article02 {
+        @extend .article01;
+        background: rgb(12, 12, 12);
+    }
+    .services {
+        min-height: 1018px;
+    }
+    .customers {
+        min-height: 354px;
+        background: rgb(170, 20, 21);
+    }
+    .gaurantee {
+        min-height: 850px;
+        background: rgb(12, 12, 12);
+    }
+    .employees {
+        min-height: 945px;
+    }
+    .contact {
+        min-height: 851px;
+        background: rgb(12, 12, 12);
+    }
+    .map {
+        min-height: 333px;
+        background: dimgrey;
+    }
+}
+
+.rm-pd {
+    padding: 0;
+}
+
+footer {
+    min-height: 115px;
+    background: dimgrey;
+}
+
