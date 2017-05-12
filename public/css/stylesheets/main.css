@@ -12668,29 +12668,45 @@ header {
 /* line 64, ../sass/_layout.scss */
 .wrapper .gaurantee {
   min-height: 850px;
-  background: #0c0c0c;
+  position: relative;
+  background: url("./../img/dev/bluebuildings.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
 }
-/* line 68, ../sass/_layout.scss */
+/* line 72, ../sass/_layout.scss */
+.wrapper .gaurantee:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+/* line 83, ../sass/_layout.scss */
 .wrapper .employees {
   min-height: 945px;
 }
-/* line 71, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 .wrapper .contact {
   min-height: 851px;
   background: #0c0c0c;
 }
-/* line 75, ../sass/_layout.scss */
+/* line 90, ../sass/_layout.scss */
 .wrapper .map {
   min-height: 333px;
   background: dimgrey;
 }
 
-/* line 81, ../sass/_layout.scss */
+/* line 96, ../sass/_layout.scss */
 .rm-pd {
   padding: 0;
 }
 
-/* line 85, ../sass/_layout.scss */
+/* line 100, ../sass/_layout.scss */
 footer {
   min-height: 115px;
   background: dimgrey;
@@ -12916,4 +12932,117 @@ footer {
   background-position: center;
   height: 450px;
   width: 100%;
+}
+
+/* line 192, ../sass/modules.scss */
+.article02 .art-pic {
+  background: url("./../img/dev/redbuilding.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* line 200, ../sass/modules.scss */
+.services {
+  padding: 7em;
+}
+/* line 202, ../sass/modules.scss */
+.services .text-container {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 208, ../sass/modules.scss */
+.services .text-container h1 {
+  font-size: 24em;
+  z-index: 5;
+  font-weight: bolder;
+  font-family: GothamMedium;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 215, ../sass/modules.scss */
+.services .text-container p {
+  position: relative;
+  top: -6em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: black;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  z-index: 6;
+  font-family: GothamMedium;
+}
+/* line 227, ../sass/modules.scss */
+.services .middle-text {
+  position: relative;
+  top: -3em;
+  text-align: center;
+  font-size: 1.9em;
+  font-family: GothamMedium;
+}
+/* line 234, ../sass/modules.scss */
+.services .blog-img {
+  background: url("./../img/dev/redblan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 285px;
+}
+/* line 240, ../sass/modules.scss */
+.services .blog-img + h1 {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1em 0em;
+  text-transform: uppercase;
+  font-family: GothamMedium;
+}
+/* line 246, ../sass/modules.scss */
+.services .blog-img + h1 + p {
+  text-align: center;
+  font-family: GothamBookRegular;
+  font-size: 1.2em;
+}
+
+/* line 256, ../sass/modules.scss */
+.customers .customer-img-quote {
+  display: flex;
+  flex-direction: row;
+  min-height: 354px;
+}
+/* line 260, ../sass/modules.scss */
+.customers .customer-img-quote div {
+  align-self: center;
+  height: 100px;
+  width: 120px;
+  margin-right: 1em;
+  background: url("./../img/dev/128.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+}
+/* line 270, ../sass/modules.scss */
+.customers .customer-img-quote div + p {
+  color: white;
+  align-self: center;
+  font-family: GothamBookRegular;
+  font-size: 1.3em;
+}
+
+/* line 281, ../sass/modules.scss */
+.gaurantee .info-img-container {
+  z-index: 1;
+}
+/* line 283, ../sass/modules.scss */
+.gaurantee .info-img-container .info-container {
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+/* line 290, ../sass/modules.scss */
+.gaurantee .info-img-container .img-container {
+  min-height: 850px;
 }
