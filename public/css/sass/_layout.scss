@@ -3,7 +3,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100000;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 1);
 }
 
 .wrapper {
@@ -79,18 +79,23 @@ header {
             opacity: 0.7;
             z-index: -1;
         }
+        .employees {
+            min-height: 945px;
+        }
+        .contact {
+            min-height: 851px;
+            background: rgb(12, 12, 12);
+        }
+        .map {
+            min-height: 333px;
+            background: dimgrey;
+        }
     }
-    .employees {
-        min-height: 945px;
-    }
-    .contact {
-        min-height: 851px;
-        background: rgb(12, 12, 12);
-    }
-    .map {
-        min-height: 333px;
-        background: dimgrey;
-    }
+}
+
+.contact {
+    min-height: 850px;
+    background: white;
 }
 
 .rm-pd {
