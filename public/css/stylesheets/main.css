@@ -13265,18 +13265,19 @@ footer {
   border: 1px solid white;
   font-family: GothamBookRegular;
   max-width: 100%;
+  min-height: 12em;
   resize: none;
 }
-/* line 478, ../sass/modules.scss */
+/* line 479, ../sass/modules.scss */
 .contact .form form input::placeholder, .contact .form form textarea::placeholder {
   color: white;
   font-family: GothamMedium;
 }
-/* line 482, ../sass/modules.scss */
+/* line 483, ../sass/modules.scss */
 .contact .form form p {
   text-align: center;
 }
-/* line 484, ../sass/modules.scss */
+/* line 485, ../sass/modules.scss */
 .contact .form form p button {
   border-radius: 0;
   border: 2px solid white;
