@@ -103,7 +103,13 @@ header {
 }
 
 footer {
-    min-height: 115px;
-    background: dimgrey;
+    background: rgb(170, 20, 21);
+    padding: 1.5em;
+    h1 {
+        font-size: 1.7em;
+        text-align: center;
+        color: white;
+        font-family: GothamMedium;
+    }
 }
 

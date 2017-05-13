@@ -12714,8 +12714,15 @@ header {
 
 /* line 105, ../sass/_layout.scss */
 footer {
-  min-height: 115px;
-  background: dimgrey;
+  background: #aa1415;
+  padding: 1.5em;
+}
+/* line 108, ../sass/_layout.scss */
+footer h1 {
+  font-size: 1.7em;
+  text-align: center;
+  color: white;
+  font-family: GothamMedium;
 }
 
 /* line 1, ../sass/modules.scss */
