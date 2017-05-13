@@ -12629,9 +12629,10 @@ header {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   left: 0;
+  top: 0;
   z-index: 1;
 }
-/* line 36, ../sass/_layout.scss */
+/* line 37, ../sass/_layout.scss */
 .wrapper .about {
   min-height: 737px;
   background: #0c0c0c;
@@ -12639,33 +12640,33 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-/* line 43, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .wrapper .article01, .wrapper .article02 {
   min-height: 450px;
   background: #aa1415;
 }
-/* line 46, ../sass/_layout.scss */
+/* line 47, ../sass/_layout.scss */
 .wrapper .article01 .container-fluid, .wrapper .article02 .container-fluid {
   min-height: 450px;
 }
-/* line 48, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .wrapper .article01 .container-fluid .row, .wrapper .article02 .container-fluid .row {
   min-height: 450px;
 }
-/* line 53, ../sass/_layout.scss */
+/* line 54, ../sass/_layout.scss */
 .wrapper .article02 {
   background: #0c0c0c;
 }
-/* line 57, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .wrapper .services {
   min-height: 1018px;
 }
-/* line 60, ../sass/_layout.scss */
+/* line 61, ../sass/_layout.scss */
 .wrapper .customers {
   min-height: 354px;
   background: #aa1415;
 }
-/* line 64, ../sass/_layout.scss */
+/* line 65, ../sass/_layout.scss */
 .wrapper .gaurantee {
   min-height: 850px;
   position: relative;
@@ -12675,7 +12676,7 @@ header {
   background-repeat: no-repeat;
   z-index: 1;
 }
-/* line 72, ../sass/_layout.scss */
+/* line 73, ../sass/_layout.scss */
 .wrapper .gaurantee:after {
   content: '';
   height: 100%;
@@ -12686,38 +12687,38 @@ header {
   opacity: 0.7;
   z-index: -1;
 }
-/* line 82, ../sass/_layout.scss */
+/* line 83, ../sass/_layout.scss */
 .wrapper .gaurantee .employees {
   min-height: 945px;
 }
-/* line 85, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 .wrapper .gaurantee .contact {
   min-height: 851px;
   background: #0c0c0c;
 }
-/* line 89, ../sass/_layout.scss */
+/* line 90, ../sass/_layout.scss */
 .wrapper .gaurantee .map {
   min-height: 333px;
   background: dimgrey;
 }
 
-/* line 96, ../sass/_layout.scss */
+/* line 97, ../sass/_layout.scss */
 .contact {
   min-height: 850px;
   background: white;
 }
 
-/* line 101, ../sass/_layout.scss */
+/* line 102, ../sass/_layout.scss */
 .rm-pd {
   padding: 0;
 }
 
-/* line 105, ../sass/_layout.scss */
+/* line 106, ../sass/_layout.scss */
 footer {
   background: #aa1415;
   padding: 1.5em;
 }
-/* line 108, ../sass/_layout.scss */
+/* line 109, ../sass/_layout.scss */
 footer h1 {
   font-size: 1.7em;
   text-align: center;
