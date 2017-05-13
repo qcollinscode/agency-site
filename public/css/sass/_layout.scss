@@ -68,7 +68,7 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        z-index: -2;
+        z-index: 1;
         &:after {
             content: '';
             height: 100%;

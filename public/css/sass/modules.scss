@@ -18,6 +18,7 @@
         }
         .lt-nav-list {
             align-self: center;
+            display: none;
             .item {
                 float: left;
                 align-self: center;
@@ -47,11 +48,9 @@
                 color: white;
                 @include bp-medium {
                     font-size: 15em;
-                    background: orange;
                 }
                 @include bp-small {
                     font-size: 17vw;
-                    background: maroon;
                 }
                 & + h1 {
                     font-size: 5em;
@@ -94,7 +93,7 @@
 }
 
 .about {
-    padding: 8em;
+    padding: 8em 0;
     .text-container {
         text-align: center;
         position: relative;
@@ -106,6 +105,7 @@
             z-index: 5;
             font-weight: bolder;
             font-family: GothamMedium;
+            margin: 0;
             color: rgba(170, 20, 21, 0.3);
         }
         p {
@@ -198,7 +198,7 @@
 }
 
 .services {
-    padding: 7em;
+    padding: 8em 0;
     .text-container {
         text-align: center;
         position: relative;
@@ -278,19 +278,47 @@
 }
 
 .gaurantee {
+    padding: 8em 0;
     .info-img-container {
-         z-index: 1;
+         z-index: 3;
+         width: 100%;
         .info-container {
             min-height: 850px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             color: white;
+            .info {
+                width: 60%;
+                margin: 0 auto;
+                h1 {
+                    & + p {
+
+                    }
+                }
+                div {
+                    margin: 1em;
+                    padding: 0.8em;
+                    font-size: 1.3em;
+                    background: rgb(170, 20, 21);
+                    p {
+                        margin: 0;
+                        font-family: GothamMedium;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
         .img-container {
             min-height: 850px;
-            img {
-                
+            .img {
+                width: 100%;
+                height: 4em;
+                text-align: center;
+                img {
+                    height: auto;
+                    max-width: 30em;
+                }
             }
         }
     }

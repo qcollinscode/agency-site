@@ -12673,7 +12673,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 1;
 }
 /* line 72, ../sass/_layout.scss */
 .wrapper .gaurantee:after {
@@ -12742,14 +12742,15 @@ footer {
 /* line 19, ../sass/modules.scss */
 .nav-top .nav-list-container .lt-nav-list {
   align-self: center;
+  display: none;
 }
-/* line 21, ../sass/modules.scss */
+/* line 22, ../sass/modules.scss */
 .nav-top .nav-list-container .lt-nav-list .item {
   float: left;
   align-self: center;
   font-family: GothamMedium;
 }
-/* line 26, ../sass/modules.scss */
+/* line 27, ../sass/modules.scss */
 .nav-top .nav-list-container .lt-nav-list .item a {
   padding: 1em;
   display: block;
@@ -12757,12 +12758,12 @@ footer {
   font-size: 1.6em;
 }
 
-/* line 38, ../sass/modules.scss */
+/* line 39, ../sass/modules.scss */
 .landing .landing-text-container {
   text-align: center;
   z-index: 2;
 }
-/* line 42, ../sass/modules.scss */
+/* line 43, ../sass/modules.scss */
 .landing .landing-text-container .landing-text h1:first-child {
   font-family: "ProximaNovaBold" !important;
   font-size: 17.5em;
@@ -12771,20 +12772,18 @@ footer {
   color: white;
 }
 @media only screen and (max-width: 992px) {
-  /* line 42, ../sass/modules.scss */
+  /* line 43, ../sass/modules.scss */
   .landing .landing-text-container .landing-text h1:first-child {
     font-size: 15em;
-    background: orange;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 42, ../sass/modules.scss */
+  /* line 43, ../sass/modules.scss */
   .landing .landing-text-container .landing-text h1:first-child {
     font-size: 17vw;
-    background: maroon;
   }
 }
-/* line 56, ../sass/modules.scss */
+/* line 55, ../sass/modules.scss */
 .landing .landing-text-container .landing-text h1:first-child + h1 {
   font-size: 5em;
   color: white;
@@ -12792,7 +12791,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 66, ../sass/modules.scss */
+/* line 65, ../sass/modules.scss */
 .landing .landing-btn {
   position: absolute;
   bottom: 0;
@@ -12801,13 +12800,13 @@ footer {
   margin-bottom: 2em;
   z-index: 2;
 }
-/* line 73, ../sass/modules.scss */
+/* line 72, ../sass/modules.scss */
 .landing .landing-btn p {
   color: white;
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 78, ../sass/modules.scss */
+/* line 77, ../sass/modules.scss */
 .landing .landing-btn button {
   border-radius: 80px;
   height: 73px;
@@ -12817,20 +12816,20 @@ footer {
   border: 2px solid lightgrey;
   cursor: pointer;
 }
-/* line 86, ../sass/modules.scss */
+/* line 85, ../sass/modules.scss */
 .landing .landing-btn button .fa-chevron-down {
   font-size: 2.1em;
 }
-/* line 89, ../sass/modules.scss */
+/* line 88, ../sass/modules.scss */
 .landing .landing-btn button:focus {
   background: orange;
 }
 
-/* line 96, ../sass/modules.scss */
+/* line 95, ../sass/modules.scss */
 .about {
-  padding: 8em;
+  padding: 8em 0;
 }
-/* line 98, ../sass/modules.scss */
+/* line 97, ../sass/modules.scss */
 .about .text-container {
   text-align: center;
   position: relative;
@@ -12838,12 +12837,13 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
-/* line 104, ../sass/modules.scss */
+/* line 103, ../sass/modules.scss */
 .about .text-container h1 {
   font-size: 24em;
   z-index: 5;
   font-weight: bolder;
   font-family: GothamMedium;
+  margin: 0;
   color: rgba(170, 20, 21, 0.3);
 }
 /* line 111, ../sass/modules.scss */
@@ -12943,7 +12943,7 @@ footer {
 
 /* line 200, ../sass/modules.scss */
 .services {
-  padding: 7em;
+  padding: 8em 0;
 }
 /* line 202, ../sass/modules.scss */
 .services .text-container {
@@ -13030,11 +13030,16 @@ footer {
   font-size: 1.3em;
 }
 
-/* line 281, ../sass/modules.scss */
-.gaurantee .info-img-container {
-  z-index: 1;
+/* line 280, ../sass/modules.scss */
+.gaurantee {
+  padding: 8em 0;
 }
-/* line 283, ../sass/modules.scss */
+/* line 282, ../sass/modules.scss */
+.gaurantee .info-img-container {
+  z-index: 3;
+  width: 100%;
+}
+/* line 285, ../sass/modules.scss */
 .gaurantee .info-img-container .info-container {
   min-height: 850px;
   display: flex;
@@ -13042,7 +13047,36 @@ footer {
   justify-content: center;
   color: white;
 }
-/* line 290, ../sass/modules.scss */
+/* line 291, ../sass/modules.scss */
+.gaurantee .info-img-container .info-container .info {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 299, ../sass/modules.scss */
+.gaurantee .info-img-container .info-container .info div {
+  margin: 1em;
+  padding: 0.8em;
+  font-size: 1.3em;
+  background: #aa1415;
+}
+/* line 304, ../sass/modules.scss */
+.gaurantee .info-img-container .info-container .info div p {
+  margin: 0;
+  font-family: GothamMedium;
+  text-transform: uppercase;
+}
+/* line 312, ../sass/modules.scss */
 .gaurantee .info-img-container .img-container {
   min-height: 850px;
+}
+/* line 314, ../sass/modules.scss */
+.gaurantee .info-img-container .img-container .img {
+  width: 100%;
+  height: 4em;
+  text-align: center;
+}
+/* line 318, ../sass/modules.scss */
+.gaurantee .info-img-container .img-container .img img {
+  height: auto;
+  max-width: 30em;
 }
