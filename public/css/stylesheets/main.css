@@ -12809,8 +12809,8 @@ footer h1 {
 .landing .landing-btn {
   position: absolute;
   bottom: 0;
+  width: 100%;
   text-align: center;
-  align-self: center;
   margin-bottom: 2em;
   z-index: 2;
 }
